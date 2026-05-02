@@ -43,5 +43,5 @@ def main():
         
         chat_history.append({"role": "model", "content": bot_reply})
         
-        if __name__ == "__main__":
-            main()
+if __name__ == "__main__":
+    main()
