@@ -15,7 +15,7 @@ def get_ai_response(user_message):
 
 def main():
     print("=" * 45)
-    print("     Welcome to Azisc — Your AI Assistant")
+    print("     Welcome to Azisc — Your AI Assistant.")
     print("     Type 'quit' to exit")
     print("=" * 45)
 
