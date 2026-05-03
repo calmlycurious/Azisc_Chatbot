@@ -6,12 +6,33 @@ load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
-try:
+def get_ai_response(user_message):
     response = client.models.generate_content(
         model="gemini-2.5-flash-lite",
-        contents="Say hello in one sentence."
+        contents=user_message
     )
-    print(response.text)
+    return response.text
 
-except Exception as e:
-    print(f"Error: {e}")
+def main():
+    print("=" * 45)
+    print("     Welcome to Azisc — Your AI Assistant")
+    print("     Type 'quit' to exit")
+    print("=" * 45)
+
+    while True:
+        user_input = input("\nYou: ").strip()
+        
+        if not user_input:
+            print("Azisc: Please type something!")
+            continue
+
+        if user_input.lower() == "quit":
+            print("Azisc: Goodbye! Have a great day.")
+            break
+
+        print("Azisc: Thinking...")
+        reply = get_ai_response(user_input)
+        print(f"Azisc: {reply}")
+
+if __name__ == "__main__":
+    main()
