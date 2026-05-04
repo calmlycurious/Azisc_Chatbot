@@ -10,4 +10,4 @@ while True:
     elif user_input.lower() == "hello":
         print(f"{bot_name}: Hello there! How can I help you?")
     else:
-        print(f"{bot_name}: You said '{user_input}'. I am still learning!")        
+        print(f"{bot_name}: You said '{user_input}'. I am still learning!")      
