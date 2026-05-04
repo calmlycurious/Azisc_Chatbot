@@ -40,7 +40,7 @@ def main():
             
         add_message(chat_history, "user", user_input)
         
-        print("Azisc: Thinking....")
+        print("Azisc: Thinking...")
         reply = get_ai_response(chat_history)
         print(f"Azsic: {reply}")
         
