@@ -20,11 +20,10 @@ A conversational AI chatbot built with Python and Google's Gemini API.
    git clone https://github.com/calmlycurious/Azisc_Chatbot.git
 
 2. Create and activate virtual environment
-   python3 -m venv venv
-   source venv/bin/activate
+   python3 -m venv venv | source venv/bin/activate
 
 3. Install dependencies
-   pip3 install google-genai python-dotenv
+   pip3 install google-genai | python-dotenv
 
 4. Create a .env file and add your Gemini API key
    GEMINI_API_KEY=your_api_key_here
