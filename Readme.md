@@ -41,5 +41,4 @@ A conversational AI chatbot built with Python and Google's Gemini API.
 | quit | Exit the chatbot |
 
 ## Author
-Ashish Gurung — BCA 2nd Year Student, Siliguri
-Passionate about AI and Machine Learning
+Ashish Gurung | BCA 2nd Year Student, Siliguri | Passionate about AI and Machine Learning
